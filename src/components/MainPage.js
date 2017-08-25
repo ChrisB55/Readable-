@@ -5,32 +5,20 @@ class MainPage extends Component {
   render() {
     return (
       <div>
-      <nav class="navbar navbar-default">
-      <div class="container">
-          <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><em>Readable</em> </a>
-              <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-          </div>
-          <div class="collapse navbar-collapse" id="navcol-1">
-              <ul class="nav navbar-nav">
-                  <li role="presentation">
-                      <a href="#"> </a>
-                  </li>
-                  <li role="presentation">
-                      <a href="#"> </a>
-                  </li>
-                  <li role="presentation"><a href="#">A Content and Comment Web Application Build With React-Redux</a></li>
-              </ul>
-          </div>
+     
+  <div className="container">
+      <div className="page-header">
+      
+          <h3>List of Available Categories </h3>
       </div>
-  </nav>
-  <div class="container">
-      <div class="page-header">
-          <h3>List of Available Categories </h3></div>
-      <p>
-          <button class="btn btn-primary" type="button">Sort by Timestamp</button>
-      </p>
-      <div class="table-responsive">
-          <table class="table table-striped">
+        <p>
+          <button className="btn btn-primary" type="button">Sort by Timestamp</button>
+        </p>
+        <p>
+          <h3> <button className="btn btn-primary-primary" type="button">Add New Post </button></h3>
+        </p>
+      <div className="table">
+          <table className="table table-striped">
               <thead>
                   <tr>
                       <th>Categories </th>
@@ -57,15 +45,16 @@ class MainPage extends Component {
               </tbody>
           </table>
       </div>
-      <div class="page-header">
-          <h3>Add New Post<button class="btn btn-primary write-review" type="button">Add New Post</button></h3></div>
+      <div className="page-header">
+        
+      </div>
   </div>
-  <footer class="site-footer">
-      <div class="container">
-          
-          <div class="row">
-              <div class="col-sm-6">
-                  <h5>Christopher Brown Web Development 2017</h5></div>
+  <footer className="site-footer">
+      <div className="container">
+          <div className="row">
+              <div className="col-sm-6">
+                  <h5>Christopher Brown Web Development 2017</h5>
+                </div>
           </div>
       </div>
   </footer>
