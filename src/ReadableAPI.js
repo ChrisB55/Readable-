@@ -13,20 +13,37 @@ const headers = {
 export const getCategory = () =>
   fetch(`${api}/categories`, { headers })
     .then(res => res.json())
+    .catch((error) => {
+      console.log('Err')
+  })
     .then(data => console.log("getCategory", data)) 
 
 export const getPost= () =>
   fetch(`${api}/posts`, { headers })
     .then(res => res.json())
-    .then(data => data.posts)
+    .catch((error) => {
+      console.log('Err')
+  })
+    
 
 export const getCategoryPosts = () =>
     fetch(`${api}/category/posts`, { headers })
       .then(res => res.json())
-      .then(data => data.getByCategory)
+      .catch((error) => {
+        console.log('Err')
+    })
+
+    export const getPostsbyId = () =>
+    fetch(`${api}/posts/id`, { headers })
+      .then(res => res.json())
+      .catch((error) => {
+        console.log('Err')
+    })
 
 export const getComments = () =>
-      fetch(`${api}/comments`, { headers })
+      fetch(`${api}//posts/:id/comments`, { headers })
         .then(res => res.json())
-        .then(data => data.comments)
+        .catch((error) => {
+          console.log('Err')
+      })
 
