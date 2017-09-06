@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
+import TableList from './TableList';
+
 
 
 class MainPage extends Component {
   render() {
+    const { categories } = this.props
     return (
       <div>
      
@@ -12,38 +16,33 @@ class MainPage extends Component {
           <h3>List of Available Categories </h3>
       </div>
         <p>
-          <button className="btn btn-primary" type="button">Sort by Timestamp</button>
+          <button 
+          className="btn btn-primary-primary" 
+          type="button">
+          <Link
+          to= "/resort"> Sort by Timestamp
+          </Link>
+          </button>
         </p>
         <p>
-          <h3> <button className="btn btn-primary-primary" type="button">Add New Post </button></h3>
+          <h3> 
+        <button 
+          className="btn btn-primary-primary" 
+          type="button">
+            <Link
+            to= "/create"> Add New Post
+            </Link>
+           
+        </button>
+
+          </h3>
         </p>
       <div className="table">
-          <table className="table table-striped">
-              <thead>
-                  <tr>
-                      <th>Categories </th>
-                      <th>Vote Score</th>
-                      <th>Timestamp </th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td>Category A</td>
-                      <td>9 </td>
-                      <td>id1 </td>
-                  </tr>
-                  <tr>
-                      <td>Category B</td>
-                      <td>8 </td>
-                      <td>id2</td>
-                  </tr>
-                  <tr>
-                      <td>Category C</td>
-                      <td>5 </td>
-                      <td>id3</td>
-                  </tr>
-              </tbody>
-          </table>
+          <ol className="categories-grid"> 
+          
+       
+          </ol>
+          
       </div>
       <div className="page-header">
         
