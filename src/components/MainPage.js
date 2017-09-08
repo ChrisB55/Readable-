@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import TableList from './TableList';
-
+import TableListDetail from './TableListDetail';
 
 
 class MainPage extends Component {
@@ -13,7 +13,10 @@ class MainPage extends Component {
   <div className="container">
       <div className="page-header">
       
-          <h3>List of Available Categories </h3>
+          
+          <TableList />
+          <TableListDetail />
+          
       </div>
         <p>
           <button 
@@ -25,7 +28,7 @@ class MainPage extends Component {
           </button>
         </p>
         <p>
-          <h3> 
+          
         <button 
           className="btn btn-primary-primary" 
           type="button">
@@ -35,7 +38,7 @@ class MainPage extends Component {
            
         </button>
 
-          </h3>
+          
         </p>
       <div className="table">
           <ol className="categories-grid"> 

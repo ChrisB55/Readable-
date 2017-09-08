@@ -19,10 +19,10 @@ class Header extends Component {
                 data-toggle="collapse"
                 data-target="#navcol-1"
               >
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar" />
-                <span class="icon-bar" />
-                <span class="icon-bar" />
+                <span className="sr-only">Toggle navigation</span>
+                <span className="icon-bar" />
+                <span className="icon-bar" />
+                <span className="icon-bar" />
               </button>
             </div>
             <div className="collapse navbar-collapse" id="navcol-1">

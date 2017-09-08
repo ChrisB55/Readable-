@@ -1,6 +1,7 @@
 export default function() {
-    const { categories } = this.props
-    return (
-        {categories}
-    )
-}
+    return [
+        { title: 'React'},
+        { title: 'Redux'},
+        { title: 'Udacity'},
+        ];
+    }
