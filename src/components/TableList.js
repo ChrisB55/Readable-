@@ -8,15 +8,15 @@ import { bindActionCreators } from 'redux';
 class TableList extends Component {
   
     renderList() 
-    {const { categories } = this.props
+    {const { category} = this.props
         return this.props.categories.map((category) => {
             return (
-            <li 
+            <button
             key={category.title}
-            onClick ={()=>this.props.selectCategory(category)}
+            onClick={()=>this.props.selectCategory(category)}
             className="list-group-item"> 
             {category.title}
-            </li>
+            </button>
         );
         });
     }

@@ -4,7 +4,7 @@ export const CATEGORY_SELECTED= 'CATEGORY_SELECTED'
 
 export function selectCategory (category) {
     return {
-        type: CATEGORY_SELECTED,
+        type:CATEGORY_SELECTED,
         category
     };
 }

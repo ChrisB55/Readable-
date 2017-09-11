@@ -5,7 +5,7 @@ function activeCategory (state={}, action) {
         
         return {
             ...state,
-            [category.label]: category,
+            [category.title]: category,
         }
         default:
     return state;
