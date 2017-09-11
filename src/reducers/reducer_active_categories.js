@@ -1,15 +1,14 @@
 function activeCategory (state={}, action) {
     switch(action.type) {
         case 'CATEGORY_SELECTED':
-        const { category } = action
-        
+        const { title } = action.category
+
         return {
-            ...state,
-            [category.title]: category,
+            active: title,
         }
         default:
     return state;
     }
 }
 
-export default activeCategory 
+export default activeCategory
