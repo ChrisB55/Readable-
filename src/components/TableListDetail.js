@@ -19,10 +19,7 @@ class TableListDetail extends Component {
     
 }
 
-function mapStateToProps(state) {
-    return {
-        category: state.activeCategories
-    }
-}
+function mapStateToProps(state) { return { categories: state.activeCategory } }
+
 
 export default connect(mapStateToProps)(TableListDetail);
